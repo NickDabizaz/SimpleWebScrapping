@@ -15,7 +15,7 @@ This project provides a simple web scraper tool to generate PDFs from web search
 2. **Run the Backend**: Navigate to the backend directory and start the Flask server with:
 
     ```bash
-    python app.py
+    python backend.py
     ```
 
 3. **Run the Frontend**: Go to the frontend directory and start the frontend server 
