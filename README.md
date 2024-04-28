@@ -1,7 +1,7 @@
 ### Simple Web Scraper for PDF Creation
 
 This project provides a simple web scraper tool to generate PDFs from web search results.
-
+(Disclaimer: 90% of the code was written by ChatGPT 3.5)
 ---
 
 #### Installation Instructions
