@@ -18,12 +18,7 @@ This project provides a simple web scraper tool to generate PDFs from web search
     python app.py
     ```
 
-3. **Run the Frontend**: Go to the frontend directory and start the frontend server with:
-
-    ```bash
-    npm install
-    npm start
-    ```
+3. **Run the Frontend**: Go to the frontend directory and start the frontend server 
 
 4. **Access the Application**: Open your browser and visit the provided URL to use the web scraper tool.
 
