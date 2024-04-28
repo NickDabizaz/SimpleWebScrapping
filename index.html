@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Text</title>
+</head>
+<body>
+    <form id="textForm">
+        <label for="textInput">Input Teks:</label><br>
+        <input type="text" id="textInput" name="textInput"><br><br>
+        <input type="button" value="Submit" onclick="sendText()">
+    </form>
+    <p id="status"></p> <!-- Menambahkan elemen untuk menampilkan status -->
+
+    <script>
+        function sendText() {
+            var inputText = document.getElementById("textInput").value;
+            fetch('http://127.0.0.1:5000/process', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ text: inputText }),
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Response from backend:', data);
+                displayStatus(data.message); // Memanggil fungsi displayStatus dengan pesan dari respons
+            })
+            .catch(error => {
+                console.error('Error during fetch:', error);
+                displayStatus('Error: ' + error.message); // Menampilkan pesan error
+            });
+        }
+
+        function displayStatus(message) {
+            document.getElementById("status").textContent = message; // Menampilkan pesan status
+        }
+    </script>
+</body>
+</html>
