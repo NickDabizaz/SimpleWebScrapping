@@ -26,11 +26,11 @@ This project provides a simple web scraper tool to generate PDFs from web search
 
 #### Usage
 
-1. Enter your search keywords in the input field and click "Search."
+1. Enter your search keywords in the input field and click "Submit."
 2. Wait for the search results to appear.
-3. Select relevant URLs from the search results.
-4. Wait for the text extraction process to complete.
-5. Download the resulting PDF file.
+3. Wait for the text extraction process to complete.
+4. Wait for the resulting PDF file in the pdf_files folder.
+5. All the PDF files will be downloaded to the pdf_files folder.
 
 ---
 
@@ -46,20 +46,13 @@ This project provides a simple web scraper tool to generate PDFs from web search
 
 #### Contributors
 
-- [Your Name](https://github.com/yourusername)
+- [NickDabizaz](https://github.com/NickDabizaz)
 
 ---
 
 #### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-#### Acknowledgements
-
-- Inspiration from [Source Name](https://sourcewebsite.com)
-- Special thanks to [Name](https://github.com/username) for guidance.
 
 ---
 
